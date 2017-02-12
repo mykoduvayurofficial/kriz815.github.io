@@ -1,0 +1,532 @@
+@font-face {
+    font-family: heart;
+    src: url("./fonts/heart.ttf");
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    /* Not sure for the below properties they may not work properly */
+    -o-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#mypage{
+
+    margin:0;
+    padding:0;
+    display: block;
+}
+
+
+#mykdr_nav{
+
+    display: block;
+    margin: 0;
+    position: fixed;
+    z-index: 1000;
+    width : 100%;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 65%, rgba(237,237,237,1) 100%);
+    border-bottom: 1px solid #5B3930;
+
+}
+
+
+#non-nav{
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+
+
+
+
+#bannerdiv{
+    display: block;
+    overflow: hidden;
+    width:100%;
+
+    /*border-bottom: 0.3vh solid #1c1c1c;*/
+}
+
+
+
+@media(max-width: 300px){
+
+
+
+}
+
+
+@media (max-width: 992px){
+
+    @media (orientation: portrait) {
+
+        #mykdr_nav{
+
+
+            height: 9vh;
+            margin-top: 0;
+
+        }
+
+
+        #bannermob {
+
+            margin-top: 9vh;
+            width: 100%;
+            height: 91vh;
+
+        }
+
+        #mykdr_logo {
+
+
+            color: #1c1c1c;
+            height:9vh;
+            width: 100%;
+            line-height: 6vh;
+            padding: 0.7vh 0 0.8vh 0;
+            cursor: pointer;
+
+            display: block;
+            float: left;
+            position: relative;
+        }
+
+        .mylogo{
+
+            display: block;
+            min-height: 7vh;
+            min-width: 7vh;
+            line-height: 7vh;
+            font-size: 7vh;
+            position: relative;
+            padding: 0;
+            margin-right: -2px;
+            margin-bottom: 1.5vh;
+        }
+
+        .mylogocap{
+
+            display: inline-block;
+            font-family: "Segoe UI Semibold";
+            font-size: 4.8vh;
+            cursor: pointer;
+            padding-top: 1vh;
+        }
+
+        .mymenuglyph{
+
+            display: inline-block;
+            font-size: 5vh;
+            color: #1c1c1c;
+            cursor: pointer;
+            float: right;
+            padding-top: 1.3vh;
+        }
+
+        #mykdr_menu{
+
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(220,215,215, 0.9);
+            margin: 0;
+            padding: 0;
+            left: 0;
+
+            font-family: "Segoe UI";
+        }
+
+        #mykdr_menu>li{
+
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 10vh;
+            line-height: 10vh;
+            font-size: 3.7vh;
+            color: #fafafa;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 0;
+
+            /*border-bottom: solid 1px rgba(08,08,08,0.7);*/
+        }
+
+
+        #closenav>i{
+
+            float: right;
+            cursor: pointer;
+            padding-top: 0.5vh;
+            font-size: 7vh;
+            font-family: FontAwesome;
+            color: #1c1c1c !important;
+
+        }
+
+        #closenav:hover{
+            color: #1d1d1d!important;
+            background-color: transparent!important;
+
+        }
+
+        #mykdr_menu>li:hover {
+
+            background-color: rgba(08,08,08,0.1);
+        }
+        #mykdr_menu>li:hover>a {
+            color: green;
+            text-decoration: none;
+
+        }
+
+        #emergency:hover>a {
+
+            color: red !important;
+            text-decoration: none;
+        }
+
+        #mykdr_menu>li>a{
+            color: #5b3930;
+            cursor: pointer;
+        }
+
+        .pagebanner
+        {
+            margin-top: 9vh;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+
+    @media (orientation: landscape) {
+
+        #mykdr_nav{
+
+
+            height: 13vh;
+            margin-top: 0;
+
+        }
+
+
+        #bannerpc {
+
+            margin-top: 13vh;
+            width: 100%;
+            height: 87vh;
+
+        }
+
+        #mykdr_logo {
+
+
+            color: #1c1c1c;
+            height:13vh;
+            width: 100%;
+            line-height: 10vh;
+            padding: 1.2vh 0 1.5vh 0;
+            cursor: pointer;
+
+            display: block;
+            float: left;
+            position: relative;
+        }
+
+        .mylogo{
+
+            display: block;
+            min-height: 9vh;
+            min-width: 9vh;
+            line-height: 10vh;
+            font-size: 9.5vh;
+            position: relative;
+            padding: 0;
+            margin-right: -2px;
+            margin-bottom: 3.5vh;
+        }
+
+        .mylogocap{
+
+            display: inline-block;
+            font-family: "Segoe UI Semibold";
+            font-size: 9vh;
+            cursor: pointer;
+            padding-top: 0.7h;
+        }
+
+        .mymenuglyph{
+
+            display: inline-block;
+            font-size: 9vh;
+            color: #1c1c1c;
+            cursor: pointer;
+            float: right;
+            padding-top: 1vh;
+        }
+
+        #mykdr_menu{
+
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(220,215,215, 0.9);
+            margin: 0;
+            padding: 0;
+            left: 0;
+
+            font-family: "Segoe UI";
+        }
+
+        #mykdr_menu>li{
+
+            display: inline-block;
+            position: relative;
+            width: 49.6%;
+            height: 18vh;
+            line-height: 18vh;
+            font-size: 7.2vh;
+            color: #fafafa;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+
+            /*border-bottom: solid 1px rgba(08,08,08,0.7);*/
+        }
+
+        #closenav{
+
+            width: 100%!important;
+            height: 10vh!important;
+            display: block!important;
+            right: 2vw;
+        }
+
+        #closenav>i{
+
+            float: right;
+            cursor: pointer;
+            padding-top: 0.7vh;
+            font-size: 9vh;
+            font-family: FontAwesome;
+            color: #1c1c1c !important;
+
+        }
+
+        #closenav:hover{
+            color: #1d1d1d!important;
+            background-color: transparent!important;
+
+        }
+
+        #mykdr_menu>li:hover {
+
+            background-color: rgba(08,08,08,0.1);
+        }
+        #mykdr_menu>li:hover>a {
+                color: green;
+                text-decoration: none;
+
+        }
+
+        #emergency:hover>a {
+
+            color: red !important;
+            text-decoration: none;
+        }
+
+        #mykdr_menu>li>a{
+            color: #5b3930;
+            cursor: pointer;
+        }
+
+        .pagebanner
+        {
+            margin-top: 13vh;
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    @media (orientation: portrait) {
+
+        .mylogo{
+
+            display: inline-block;
+            font-size: 3vh;
+            height: 3.5vh;
+            line-height : 100%;
+            padding-bottom: 1vh;
+        }
+
+        #mykdr_nav {
+
+
+        }
+
+    }
+
+    @media (orientation: landscape) {
+
+        .mylogo{
+
+            display: inline-block;
+            font-size: 3vw;
+            height: 3.5vw;
+            line-height : 100%;
+
+        }
+
+        #mykdr_nav {
+
+
+        }
+
+
+
+
+    }
+
+}
+
+
+
+@media (min-width: 992px) {
+
+    #mykdr_nav{
+
+        height: 8vh;
+
+    }
+
+    #mykdr_logo {
+
+
+        color: #1c1c1c;
+        height:6.5vh;
+        line-height: 6.5vh;
+        padding: 1vh 0 0 0;
+        cursor: pointer;
+
+        margin: auto;
+        display: inline-block;
+
+    }
+
+    .mylogo{
+
+
+        margin-right: -4px;
+        height: 5.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .mylogocap{
+
+        font-family: "Segoe UI Semibold";
+        font-size: 1.6vw;
+        cursor: pointer;
+    }
+
+
+
+
+    #mykdr_menu{
+
+        line-height: 6.5vh;
+        height: 6.5vh;
+        display: inline-block;
+        margin: auto;
+        float: right;
+    }
+
+    #mykdr_menu>li{
+
+        font-family: "Segoe UI Semibold";
+        font-size: 1.2vw;
+        height:3.7vh;
+        display: inline-block;
+        margin-left: 0.9vw ;
+        margin-top: 1vh;
+        padding: 2px 2px 2px 2px;
+    }
+
+
+    #bannerdiv{
+
+        margin-top: 8vh;
+        height:92vh;
+
+    }
+
+    #bannerpc {
+        width: 100%;
+        height: 92vh;
+
+    }
+
+    .mymenuglyph{
+
+        display: none;
+    }
+
+    #closenav {
+
+        display: none!important;
+    }
+
+
+
+    #home:hover>a,#landscape:hover>a,#culture:hover>a,#contact:hover>a,#people:hover>a,#trending:hover>a,#events:hover>a,#services:hover>a {
+
+        color: #008800;
+        text-decoration: none;
+
+    }
+
+    #emergency:hover>a {
+
+        color: red !important;
+        text-decoration: none;
+    }
+
+    #mykdr_menu>li>a{
+        color: #5b3930;
+        cursor: pointer;
+    }
+
+    .pagebanner
+    {
+        margin-top: 8vh;
+        width: 100%;
+        height: auto;
+    }
+}
